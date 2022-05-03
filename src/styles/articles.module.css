@@ -1,0 +1,223 @@
+.headbg {
+    width: 100%;
+}
+.headbg img {
+    width: 100%;
+}
+.post {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 70px 120px 0 120px;
+    position: relative;
+}
+.dot {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.post div {
+    width: 60%;
+}
+.post div nav {
+    margin: 0 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+.post div nav img {
+    width: 100%;
+}
+.post div nav h4 {
+    color: #5c5656;
+    margin: 10px 0;
+    padding: 0 20px;
+    font-size: 25px;
+}
+.post div nav p {
+    margin: 10px 0;
+    padding: 0 20px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #5c5656;
+}
+.post aside {
+    z-index: 222;
+    width: 35%;
+    padding: 20px;
+    background: #F9F9F9;
+    height: fit-content;
+}
+.post aside a {
+    display: flex;
+    margin: 20px 0;
+    text-decoration: none;
+}
+.post aside img {
+    width: 150px;
+    height: 150px;
+}
+.post aside h4 {
+    font-size: 25px;
+    color: #db1013;
+}
+.post aside a p {
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 10px;
+    color: #5c5656;
+}
+.comment {
+    display: flex;
+    flex-direction: column;
+    padding: 0 120px 50px;
+    color: #5c5656;
+}
+.comment span {
+    margin: 10px 0;
+}
+.comment .com {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    font-size: 18px;
+    margin: 20px 0;
+}
+.com textarea {
+    border: 1px solid gray;
+    outline: none;
+    height: 150px;
+    border-radius: 5px;
+}
+.comment div {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+.comment div label {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+.comment div input {
+    height: 50px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+.comment button {
+    width: 100px;
+    height: 50px;
+    font-size: 18px;
+    margin: 20px 0;
+    border: none;
+    outline: none;
+    background: #db1013;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.comment h3 {
+    font-size: 18px;
+    color: #db1013;
+    font-weight: 400;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+@media only screen and (max-width: 800px) {
+    .headbg {
+        width: 100%;
+        height: 200px;
+    }
+    .headbg img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .post {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 20px;
+    }
+    .post div {
+        width: 100%;
+        z-index: 2222;
+    }
+    .post div nav img {
+        width: 100%;
+        height: 150px;
+    }
+    .post div nav h4 {
+        margin: 10px 0;
+        padding: 0;
+        font-size: 20px;
+    }
+    .post div nav p {
+        padding: 0;
+        font-size: 16px;
+    }
+    .post aside {
+        width: 100%;
+        padding: 20px 0;
+    }
+    .post aside h4 {
+        font-size: 20px;
+    }
+    .post aside a p {
+        font-size: 16px;
+        padding: 10px;
+    }
+    .post aside img {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+    }
+    .comment {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .comment span {
+        margin: 10px 0;
+    }
+    .comment .com {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        font-size: 16px;
+        margin: 20px 0;
+    }
+    .com textarea {
+        border: 1px solid gray;
+        outline: none;
+        height: 100px;
+    }
+    .comment div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 16px;
+    }
+    .comment div label {
+        width: 100%;
+    }
+    .comment div input {
+        height: 40px;
+    }
+    .comment button {
+        width: 100px;
+        height: 40px;
+        font-size: 16px;
+    }
+    .comment h3 {
+        width: 100%;
+    }
+
+}

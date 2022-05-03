@@ -1,0 +1,192 @@
+.headbg {
+    width: 100%;
+}
+.headbg img {
+    width: 100%;
+}
+.contact .info {
+    padding: 30px 120px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+}
+.contact .info nav {
+    height: 200px;
+    margin: 20px;
+    padding: 20px 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 20px 60px -10px grey;
+} 
+.contact .info img {
+    margin: 10px;
+}
+.contact .info p {
+    margin: 10px;
+    line-height: 1.5;
+}
+.contact .form {
+    background: #F5F5F5;
+    display: flex;
+    padding: 0 120px;
+    margin: 50px 0;
+    height: 100%;
+    position: relative;
+}
+.contact .form div:first-of-type {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.contact .form div h2 {
+    color: #db1013;
+    font-size: 30px;
+    width: 80%;
+    margin: 30px auto 10px;
+}
+.contact .form div p {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #656565;
+    line-height: 1.5em;
+}
+.contact .form form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    color: #656565;
+}
+.contact .form form label {
+    margin: 5px 0;
+    display: flex;
+    flex-direction: column;
+}
+.contact .form form label input {
+    height: 50px;
+    margin: 10px 0;
+    padding: 0 10px;
+    font-size: 18px;
+    width: 80%;
+    border: 1px solid grey;
+    outline: none;
+}
+.contact .form form button {
+    width: 150px;
+    height: 50px;
+    border: none;
+    outline: none;
+    background: #db1013;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact .form .investImg {
+    z-index: 222;
+    height: fit-content;
+    width: 40%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact .form img {
+    margin: auto;
+}
+.contact .form .dot {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    bottom: 50%;
+}
+.sent {
+    display: flex;
+    padding: 20px;
+    font-weight: 700;
+    color: #db1013;
+}
+@media only screen and (max-width: 800px) {
+    .headbg {
+        width: 100%;
+        height: 200px;
+    }
+    .headbg img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .contact .info {
+        padding: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact .info nav {
+        height: fit-content;
+        width: 100%;
+        margin: 20px 0;
+        box-shadow: 0 20px 30px -10px rgb(148, 144, 144, 0.7);
+    } 
+    .contact .form {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        margin: 50px 0;
+        height: fit-content;
+    }
+    .contact .form div:first-of-type {
+        width: 100%;
+    }
+    .contact .form div h2 {
+        font-size: 25px;
+        width: 100%;
+        margin: 20px 0;
+    }
+    .contact .form form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        color: #656565;
+    }
+    .contact .form form label {
+        margin: 5px 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .contact .form form label input {
+        height: 40px;
+        margin: 10px 0;
+        width: 100%;
+        border: 1px solid grey;
+        outline: none;
+    }
+    .contact .form form button {
+        width: 100px;
+        height: 35px;
+        border: none;
+        outline: none;
+        background: #db1013;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact .form .investImg {
+       display: none;
+    }
+    .contact .form .dot {
+        display: none;
+    }
+}

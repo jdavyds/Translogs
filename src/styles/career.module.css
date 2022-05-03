@@ -1,0 +1,129 @@
+.headbg {
+    width: 100%;
+}
+.headbg img {
+    width: 100%;
+}
+.career {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 120px;
+    position: relative;
+}
+.career h3 {
+    font-size: 30px;
+    color: #db1013;
+}
+.career form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.career form div {
+    width: 100%;
+    display: flex;
+}
+.career form div label {
+    width: 40%;
+    margin: 20px auto;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+}
+.career form label button {
+    background: #F7F3F3;
+    height: 50px;
+    width: 100%;
+    margin: 10px 0;
+    border: 1px solid gray;
+    outline: none;
+    position: relative;
+}
+.career form label button input {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.career form div input, .career form div select {
+    height: 50px;
+    margin: 10px 0;
+    padding: 0 20px;
+    font-size: 18px;
+    outline: none;
+    color: gray;
+}
+.career .submit {
+    width: 150px;
+    height: 50px;
+    margin: 0 70px;
+    border: none;
+    outline: none;
+    background: #db1013;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.submit a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dot {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+@media only screen and (max-width: 800px) {
+    .headbg {
+        width: 100%;
+        height: 200px;
+    }
+    .headbg img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .career {
+        padding: 20px;
+        position: relative;
+    }
+    .career h3 {
+        font-size: 20px;
+        margin: 20px;
+    }
+    .career form div {
+        flex-direction: column;
+    }
+    .career form div label {
+        width: 100%;
+        font-size: 16px;
+        margin: 10px auto;
+    }
+    .career form label button {
+        height: 40px;
+    }
+    .career form div input, .career form div select {
+        height: 40px;
+        font-size: 16px;
+    }
+    .career .submit {
+        width: 100px;
+        height: 40px;
+        margin: 0;
+    }
+    .dot {
+        display: none;
+    }
+}

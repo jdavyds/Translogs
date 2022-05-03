@@ -1,0 +1,65 @@
+.headbg {
+    width: 100%;
+}
+.headbg img {
+    width: 100%;
+}
+.faq {
+    width: 100%;
+    padding: 50px 120px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.faq div {
+    width: 40%;
+    margin: 20px auto;
+    font-size: 18px;
+}
+.faq div nav {
+    background: #F3F5F8;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.faq div p {
+    background: rgb(250, 245, 245);
+    color: gray;
+    padding: 20px;
+    line-height: 1.5;
+}
+.faq .show {
+    display: none;
+}
+.faq .trans {
+    transform: rotate(180deg);
+}
+.dot {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+@media only screen and (max-width: 800px) {
+    .headbg {
+        width: 100%;
+        height: 200px;
+    }
+    .headbg img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .faq {
+        width: 100%;
+        padding: 20px;
+    }
+    .faq div {
+        width: 100%;
+        margin: 20px auto;
+        font-size: 16px;
+    }
+    .dot {
+     display: none;
+    }
+}

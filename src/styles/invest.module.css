@@ -1,0 +1,150 @@
+.bg {
+    background: url(./../assets/investbg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    color: white;
+    font-weight: 1000;
+    position: relative;
+    z-index: -2;
+}
+.bg::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(19, 18, 18, 0.6);
+    z-index: -1;
+}
+.invest {
+    display: flex;
+    padding: 0 120px;
+    margin-bottom: 30px;
+    height: 100%;
+}
+.invest div:first-of-type {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.invest div h2 {
+    font-size: 30px;
+    width: 80%;
+    margin: 30px auto 10px;
+}
+.invest div p {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #656565;
+    line-height: 1.5em;
+}
+.invest form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    color: #656565;
+}
+.invest form label {
+    margin: 5px 0;
+    display: flex;
+    flex-direction: column;
+}
+.invest form label input {
+    height: 50px;
+    margin: 10px 0;
+    padding: 0 10px;
+    font-size: 18px;
+    width: 80%;
+    border: 1px solid grey;
+    outline: none;
+}
+.invest form button {
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: #db1013;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.invest .investImg {
+    height: fit-content;
+    width: 40%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.invest img {
+    margin: auto;
+}
+.investImgR {
+    display: none;
+}
+.sent {
+    display: flex;
+    padding: 20px;
+    font-weight: 700;
+    color: #db1013;
+}
+@media only screen and (max-width: 800px) {
+    .bg {
+        height: 200px;
+        width: 100%;
+        font-size: 20px;
+    }
+    .invest {
+        flex-direction: column;
+        padding: 20px;
+        margin-bottom: 0;
+        height: fit-content;
+    }
+    .invest div:first-of-type {
+        width: 100%;
+        margin: 0;
+    }
+    .invest div h2 {
+        font-size: 25px;
+        width: 100%;
+        margin: 10px 0;
+    }
+    .invest div p {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .invest form {
+        width: 100%;
+    }
+    .invest form label input {
+        height: 40px;
+        width: 100%;
+    }
+    .invest form button {
+        width: 150px;
+        height: 35px;
+        font-size: 14px;
+    }
+    .invest .investImg {
+        display: none;
+    }
+    .investImgR {
+        display: block;
+        width: 100%;
+        height: calc(100vw - 40px);
+    }
+}
